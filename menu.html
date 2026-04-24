@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Меню | Місячна Кава</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="page-loader">
+  <div class="cup"></div>
+  <p data-ua="Готуємо меню..." data-en="Preparing menu...">Готуємо меню...</p>
+</div>
+
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Місячна<span>Кава</span></a>
+
+    <div class="nav-actions">
+      <button class="lang-btn" id="langToggle">EN</button>
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-ua="Головна" data-en="Home">Головна</a></li>
+      <li><a href="menu.html" class="active" data-ua="Меню" data-en="Menu">Меню</a></li>
+      <li><a href="about.html" data-ua="Про нас" data-en="About">Про нас</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero menu-bg">
+  <h1 data-ua="Наше меню" data-en="Our Menu">Наше меню</h1>
+  <p data-ua="Кава, холодні напої, сніданки, десерти та багато смачного для затишного дня."
+     data-en="Coffee, cold drinks, breakfasts, desserts and many tasty things for a cozy day.">
+    Кава, холодні напої, сніданки, десерти та багато смачного для затишного дня.
+  </p>
+</section>
+
+<section class="section">
+  <div class="menu-tabs reveal">
+    <button class="tab-btn active" data-filter="all" data-ua="Все" data-en="All">Все</button>
+    <button class="tab-btn" data-filter="coffee" data-ua="Кава" data-en="Coffee">Кава</button>
+    <button class="tab-btn" data-filter="cold" data-ua="Холодні" data-en="Cold">Холодні</button>
+    <button class="tab-btn" data-filter="food" data-ua="Їжа" data-en="Food">Їжа</button>
+    <button class="tab-btn" data-filter="dessert" data-ua="Десерти" data-en="Desserts">Десерти</button>
+  </div>
+
+  <div class="product-grid">
+    <article class="product-card reveal" data-category="coffee">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Latte">
+      <div class="product-info">
+        <span class="tag" data-ua="Кава" data-en="Coffee">Кава</span>
+        <h3 data-ua="Карамельний місячний лате" data-en="Caramel Moon Latte">Карамельний місячний лате</h3>
+        <p data-ua="Еспресо, молоко, карамель, ванільна пінка." data-en="Espresso, milk, caramel, vanilla foam.">Еспресо, молоко, карамель, ванільна пінка.</p>
+        <strong>159 ₴</strong>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-category="coffee">
+      <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=900&q=80" alt="Cappuccino">
+      <div class="product-info">
+        <span class="tag" data-ua="Кава" data-en="Coffee">Кава</span>
+        <h3 data-ua="Капучино з корицею" data-en="Cinnamon Cappuccino">Капучино з корицею</h3>
+        <p data-ua="Класичний капучино з ароматною корицею." data-en="Classic cappuccino with fragrant cinnamon.">Класичний капучино з ароматною корицею.</p>
+        <strong>115 ₴</strong>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-category="coffee">
+      <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=80" alt="Espresso">
+      <div class="product-info">
+        <span class="tag" data-ua="Кава" data-en="Coffee">Кава</span>
+        <h3 data-ua="Подвійний еспресо" data-en="Double Espresso">Подвійний еспресо</h3>
+        <p data-ua="Насичений смак для тих, кому потрібна енергія." data-en="Rich taste for those who need energy.">Насичений смак для тих, кому потрібна енергія.</p>
+        <strong>85 ₴</strong>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-category="cold">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80" alt="Iced coffee">
+      <div class="product-info">
+        <span class="tag" data-ua="Холодні" data-en="Cold">Холодні</span>
+        <h3 data-ua="Айс-лате з ваніллю" data-en="Vanilla Iced Latte">Айс-лате з ваніллю</h3>
+        <p data-ua="Холодне молоко, еспресо, лід та ваніль." data-en="Cold milk, espresso, ice and vanilla.">Холодне молоко, еспресо, лід та ваніль.</p>
+        <strong>145 ₴</strong>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-category="cold">
+      <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=80" alt="Lemonade">
+      <div class="product-info">
+        <span class="tag" data-ua="Холодні" data-en="Cold">Холодні</span>
+        <h3 data-ua="Ягідний лимонад" data-en="Berry Lemonade">Ягідний лимонад</h3>
+        <p data-ua="Лимон, ягоди, м’ята і газована вода." data-en="Lemon, berries, mint and sparkling water.">Лимон, ягоди, м’ята і газована вода.</p>
+        <strong>125 ₴</strong>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-category="food">
+      <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80" alt="Avocado toast">
+      <div class="product-info">
+        <span class="tag" data-ua="Їжа" data-en="Food">Їжа</span>
+        <h3 data-ua="Авокадо-тост" data-en="Avocado Toast">Авокадо-тост</h3>
+        <p data-ua="Хліб на заквасці, авокадо, яйце, зелень." data-en="Sourdough bread, avocado, egg, herbs.">Хліб на заквасці, авокадо, яйце, зелень.</p>
+        <strong>215 ₴</strong>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-category="food">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="Bagel">
+      <div class="product-info">
+        <span class="tag" data-ua="Їжа" data-en="Food">Їжа</span>
+        <h3 data-ua="Бейгл з лососем" data-en="Salmon Bagel">Бейгл з лососем</h3>
+        <p data-ua="Крем-сир, лосось, огірок та мікрозелень." data-en="Cream cheese, salmon, cucumber and microgreens.">Крем-сир, лосось, огірок та мікрозелень.</p>
+        <strong>245 ₴</strong>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-category="dessert">
+      <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80" alt="Cheesecake">
+      <div class="product-info">
+        <span class="tag" data-ua="Десерт" data-en="Dessert">Десерт</span>
+        <h3 data-ua="Чизкейк з ягодами" data-en="Berry Cheesecake">Чизкейк з ягодами</h3>
+        <p data-ua="Ніжний сирний десерт з ягідним соусом." data-en="Soft cheesecake with berry sauce.">Ніжний сирний десерт з ягідним соусом.</p>
+        <strong>155 ₴</strong>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-category="dessert">
+      <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80" alt="Brownie">
+      <div class="product-info">
+        <span class="tag" data-ua="Десерт" data-en="Dessert">Десерт</span>
+        <h3 data-ua="Шоколадний брауні" data-en="Chocolate Brownie">Шоколадний брауні</h3>
+        <p data-ua="Темний шоколад, горіхи та м’яка текстура." data-en="Dark chocolate, nuts and soft texture.">Темний шоколад, горіхи та м’яка текстура.</p>
+        <strong>135 ₴</strong>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Місячна Кава. Portfolio website.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
