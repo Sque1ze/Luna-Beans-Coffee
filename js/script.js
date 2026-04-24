@@ -3,20 +3,20 @@ const navLinks = document.getElementById("navLinks");
 const langToggle = document.getElementById("langToggle");
 const loader = document.querySelector(".page-loader");
 
-let currentLang = localStorage.getItem("siteLang") || "uk";
+let currentLang = localStorage.getItem("siteLang") || "ua";
 
 function applyLanguage(lang) {
   currentLang = lang;
   localStorage.setItem("siteLang", lang);
 
-  document.documentElement.lang = lang;
+  document.documentElement.lang = lang === "ua" ? "uk" : "en";
 
   document.querySelectorAll("[data-ua][data-en]").forEach(element => {
     element.textContent = element.dataset[lang];
   });
 
   if (langToggle) {
-    langToggle.textContent = lang === "uk" ? "EN" : "UA";
+    langToggle.textContent = lang === "ua" ? "EN" : "UA";
   }
 }
 
@@ -24,7 +24,7 @@ applyLanguage(currentLang);
 
 if (langToggle) {
   langToggle.addEventListener("click", () => {
-    const nextLang = currentLang === "uk" ? "en" : "uk";
+    const nextLang = currentLang === "ua" ? "en" : "ua";
     applyLanguage(nextLang);
   });
 }
